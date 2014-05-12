@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1161AC88-D4B2-47C7-B27F-6CFC3A6CDACC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DandDProto</RootNamespace>
+    <AssemblyName>DandDProto</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Armor.cs" />
+    <Compile Include="Character.cs" />
+    <Compile Include="Demon.cs" />
+    <Compile Include="GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI.Designer.cs">
+      <DependentUpon>GUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game.cs" />
+    <Compile Include="Hero.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Ranger.cs" />
+    <Compile Include="Warrior.cs" />
+    <Compile Include="Weapon.cs" />
+    <Compile Include="Wizard.cs" />
+    <EmbeddedResource Include="GUI.resx">
+      <DependentUpon>GUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\Axe Button.jpg" />
+    <Content Include="Images\AxeBattle.jpg" />
+    <Content Include="Images\AxeImage.jpg" />
+    <Content Include="Images\BalanceItem.jpg" />
+    <Content Include="Images\bane_vert.jpg" />
+    <Content Include="Images\Battle.jpg" />
+    <Content Include="Images\Battlebox.jpg" />
+    <Content Include="Images\BlankImage.jpg" />
+    <Content Include="Images\Drow Button.jpg" />
+    <Content Include="Images\DrowImage.jpg" />
+    <Content Include="Images\EnemyBattle.jpg" />
+    <Content Include="Images\Exit.jpg" />
+    <Content Include="Images\HeroSelectionPane.jpg" />
+    <Content Include="Images\HeroSelectionPane2.jpg" />
+    <Content Include="Images\HeroSelectionPane3.jpg" />
+    <Content Include="Images\HeroSelectionPane4.jpg" />
+    <Content Include="Images\HighArmorItem.jpg" />
+    <Content Include="Images\HighDamageItem.jpg" />
+    <Content Include="Images\life_stealer_vert.jpg" />
+    <Content Include="Images\Play Button.jpg" />
+    <Content Include="Images\Play.jpg" />
+    <Content Include="Images\Shaman Button.jpg" />
+    <Content Include="Images\ShamanImage.jpg" />
+    <Content Include="Images\Splash.jpg" />
+    <None Include="Resources\ShamanBattle.jpg" />
+    <None Include="Resources\DrowBattle.jpg" />
+    <None Include="Resources\EnemyBattle.jpg" />
+    <None Include="Resources\AxeBattle.jpg" />
+    <None Include="Resources\Battle.jpg" />
+    <None Include="Resources\Talisman.jpg" />
+    <None Include="Resources\Hood.jpg" />
+    <None Include="Resources\Mail.jpg" />
+    <None Include="Resources\Staff.jpg" />
+    <None Include="Resources\Arrows.jpg" />
+    <None Include="Resources\Axe.jpg" />
+    <None Include="Resources\ItemPane.jpg" />
+    <None Include="Resources\HeroSelectionPane4.jpg" />
+    <None Include="Resources\HeroSelectionPane3.jpg" />
+    <None Include="Resources\HeroSelectionPane.jpg" />
+    <None Include="Resources\ShamanImage.jpg" />
+    <None Include="Resources\DrowImage.jpg" />
+    <None Include="Resources\AxeImage.jpg" />
+    <None Include="Resources\BlankImage.jpg" />
+    <None Include="Resources\Shaman Button.jpg" />
+    <None Include="Resources\Drow Button.jpg" />
+    <None Include="Resources\Axe Button.jpg" />
+    <None Include="Resources\HeroSelectionPane2.jpg" />
+    <None Include="Resources\Exit.jpg" />
+    <None Include="Resources\Play.jpg" />
+    <None Include="Resources\Splash.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

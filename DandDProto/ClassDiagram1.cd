@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DandDProto.Character">
+    <Position X="4.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgiAACAAAAAAAACAIIwAQEEIACAQBCIACEAkAAIAA=</HashCode>
+      <FileName>Character.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DandDProto.Armour">
+    <Position X="2.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAARAAAAAAAQCAAgAAAAA=</HashCode>
+      <FileName>Armor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DandDProto.Weapon">
+    <Position X="0.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAACAAAAAAAAAAAAAAAAAZAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Weapon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DandDProto.Hero">
+    <Position X="2.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQEAABJAAAAgAAEAAAAAgAAAGAQAAAAAAQAAEQAA=</HashCode>
+      <FileName>Hero.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DandDProto.Demon">
+    <Position X="7" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAQAAAAAQAA=</HashCode>
+      <FileName>Demon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DandDProto.Wizard">
+    <Position X="2.25" Y="11" Width="1.5" />
+    <InheritanceLine Type="DandDProto.Hero" FixedToPoint="true">
+      <Path>
+        <Point X="3" Y="10.377" />
+        <Point X="3" Y="10.7" />
+        <Point X="3.188" Y="10.7" />
+        <Point X="3.188" Y="11" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAACAAAAAAQAAAAAQAA=</HashCode>
+      <FileName>Wizard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DandDProto.Ranger">
+    <Position X="4" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAACAAAAAAQAAAAAQAA=</HashCode>
+      <FileName>Ranger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DandDProto.Warrior">
+    <Position X="0.5" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAACAAAAAAQAAAAAQAA=</HashCode>
+      <FileName>Warrior.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DandDProto.Game">
+    <Position X="6.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAgAAAAAAAAAAAACAAAAAgAAAQAAACo=</HashCode>
+      <FileName>Game.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
